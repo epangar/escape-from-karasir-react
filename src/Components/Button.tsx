@@ -2,7 +2,7 @@ import { Game } from "../Classes/Game-class";
 
 interface buttonProps {
     value: string;
-    callBack : any;
+    callBack : (method:string)=>void;
     game: Game
 }
 
@@ -10,25 +10,25 @@ const Button = (props: buttonProps)=>{
 
     const handleClik = () :void =>{
 
-        let method;
+        let method:string = '';
         switch(props.value){
             case('drink water'):
-                method = props.game.player.drink;
+                method = "drink";
                 break;
             case('moderate speed'):
-                method = props.game.player.moderate;
+                method = "moderate";
                 break;
             case('full speed'):
-                method = props.game.player.full;
+                method = "full";
                 break;
             case('stop'):
-                method = props.game.player.stop;
+                method = "stop";
                 break;
             case('restart'):
-                method = props.game.player.restart;
+                method = "restart";
                 break;
             case('quit'):
-                method = props.game.player.quit;
+                method = "quit";
                 break;
         }
         props.callBack(method)
