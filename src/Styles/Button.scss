@@ -1,0 +1,20 @@
+.button {
+    background-color: black;
+    color: greenyellow;
+    border: 1px solid greenyellow;
+    padding: 5px 10px;
+    width: 200px;
+
+    &__red{
+        background-color: red;
+        color: black;
+        border: 1px solid white;
+    
+    }
+
+}
+
+.button:hover {
+    background-color: grey;
+    color: blue;
+  }
