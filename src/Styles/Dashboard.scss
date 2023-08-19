@@ -1,0 +1,9 @@
+.dashboard {
+    border: 1px solid red;
+    display: flex;
+
+    &__buttonblock{
+        display:flex;
+        flex-direction: column;
+    }
+}
