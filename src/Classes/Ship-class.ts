@@ -27,5 +27,27 @@ export class Ship{
 		this.maxWater = 3;
 	}
 
+	drink(){
+
+	}
+
+	restart(){
+
+	}
 	
+	quit(){
+
+	}
+
+	moderate(){
+
+	}
+
+	full(){
+
+	}
+
+	stop(){
+		
+	}
 }
