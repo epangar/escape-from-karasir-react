@@ -27,27 +27,42 @@ export class Ship{
 		this.maxWater = 3;
 	}
 
-	drink(){
+	drink():string{
+		let answer : string= ""
+		
+			if(this.water >= 1){
+				this.water--;
+				this.thirst = 0;
+				answer = "*****You drink from your canteen. You're not thirsty anymore.*****"
 
+				if (this.water === 0){
+					answer += "\n*****Your canteen is empty!*****"
+				}
+			} else {
+				answer = "You can't drink! The canteen is empty!"
+			}
+
+			return answer;
+		
 	}
 
-	restart(){
-
+	restart():string{
+		return ""
 	}
 	
-	quit(){
-
+	quit():string{
+		return ""
 	}
 
-	moderate(){
-
+	moderate():string{
+		return ""
 	}
 
-	full(){
-
+	full():string{
+		return ""
 	}
 
-	stop(){
-		
+	stop():string{
+		return ""
 	}
 }
